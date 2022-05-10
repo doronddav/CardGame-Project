@@ -178,3 +178,4 @@ newGame.addEventListener("click", () => {
   scoreP1.textContent = `${deckP1.length}`;
   scoreP2.textContent = `${deckP2.length}`;
 });
+//
