@@ -1,0 +1,170 @@
+body {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+@media (max-width: 1000px) {
+  body {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (max-width: 400) {
+  body {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.game-table {
+  background-image: url(/table.jpg);
+  border: 0.2rem solid black;
+  width: 50rem;
+  height: 38rem;
+}
+
+@media (max-width: 1000px) {
+  .game-table {
+    width: 55rem;
+  }
+}
+
+@media (max-width: 400) {
+  .game-table {
+    width: 43rem;
+  }
+}
+
+.player1 {
+  border: 0.2rem solid black;
+  width: 49.8rem;
+  height: 18.1rem;
+}
+
+@media (max-width: 1000px) {
+  .player1 {
+    width: 55rem;
+  }
+}
+
+.player1 .showCard1 {
+  border: 0.2rem solid black;
+  width: 9rem;
+  height: 12rem;
+  position: relative;
+  top: -15.5rem;
+  left: 20rem;
+}
+
+.player1 .showCard1 img {
+  width: 9rem;
+  height: 12rem;
+  margin: 0;
+}
+
+.deck {
+  width: 7.1rem;
+  height: 9.1rem;
+  position: relative;
+  top: -1rem;
+  left: 4.5rem;
+}
+
+.player2 {
+  width: 19.8rem;
+  height: 19.1rem;
+}
+
+.player2 .showcard2 {
+  border: 0.2rem solid black;
+  width: 9rem;
+  height: 12rem;
+  position: relative;
+  top: -18.4rem;
+  left: 20.2rem;
+}
+
+.player2 .showcard2 img {
+  width: 9rem;
+  height: 12rem;
+  margin: 0;
+}
+
+.playP1 {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 1rem;
+  margin: 0.5rem 0;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  position: relative;
+  top: 0;
+  left: 20rem;
+}
+
+.score {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  top: 8rem;
+  left: 0.5rem;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.btn {
+  position: relative;
+  top: -17rem;
+  left: 20rem;
+}
+
+button {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 1rem;
+  margin: 0.5rem 0;
+}
+
+.cards {
+  font-size: 3rem;
+  color: #ebf6ff;
+  margin: 3rem 0 0 0;
+  text-align: center;
+}
+
+.winner {
+  border: 0.3rem white dotted;
+}
+
+.win-game {
+  color: yellow;
+  font-size: 5rem;
+  position: absolute;
+  left: 30rem;
+  text-decoration: underline;
+}
+
+.scoreBox1 {
+  position: relative;
+  top: -3rem;
+  left: 0rem;
+}
+
+.scoreBox2 {
+  position: relative;
+  top: -3rem;
+  left: 0;
+}
+/*# sourceMappingURL=style.css.map */

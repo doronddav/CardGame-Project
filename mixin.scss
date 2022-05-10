@@ -1,0 +1,28 @@
+@mixin smallScreenCpomputer {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin forPhone {
+  @media (max-width: 400) {
+    @content;
+  }
+}
+
+@mixin relativePosition($top, $left) {
+  position: relative;
+  top: $top;
+  left: $left;
+}
+@mixin game-table {
+  background-image: url(/table.jpg);
+  border: 1rem solid black;
+  width: 50rem;
+  height: 38rem;
+}
+@mixin playerErea($width, $height) {
+  border: 0.2rem solid black;
+  width: $width;
+  height: $height;
+}

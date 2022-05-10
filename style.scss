@@ -1,0 +1,124 @@
+@import "./mixin.scss";
+
+body {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+
+  @include smallScreenCpomputer {
+    justify-content: flex-start;
+  }
+  @include forPhone {
+    justify-content: flex-start;
+  }
+}
+.game-table {
+  background-image: url(/table.jpg);
+  @include playerErea(50rem, 38rem);
+
+  @include smallScreenCpomputer {
+    width: 55rem;
+  }
+  @include forPhone {
+    width: 43rem;
+  }
+}
+
+.player1 {
+  border: 0.2rem solid black;
+  width: 49.8rem;
+  height: 18.1rem;
+  @include smallScreenCpomputer {
+    width: 55rem;
+  }
+
+  .showCard1 {
+    @include playerErea(9rem, 12rem);
+
+    @include relativePosition(-15.5rem, 20rem);
+
+    img {
+      width: 9rem;
+      height: 12rem;
+      margin: 0;
+    }
+  }
+}
+
+.deck {
+  width: 7.1rem;
+  height: 9.1rem;
+  @include relativePosition(-1rem, 4.5rem);
+}
+
+.player2 {
+  width: 19.8rem;
+  height: 19.1rem;
+  .showcard2 {
+    @include playerErea(9rem, 12rem);
+
+    @include relativePosition(-18.4rem, 20.2rem);
+
+    img {
+      width: 9rem;
+      height: 12rem;
+      margin: 0;
+    }
+  }
+}
+
+.playP1 {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 1rem;
+  margin: 0.5rem 0;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  @include relativePosition(0, 20rem);
+}
+
+.score {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  top: 8rem;
+  left: 0.5rem;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+.btn {
+  @include relativePosition(-17rem, 20rem);
+}
+button {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 1rem;
+  margin: 0.5rem 0;
+}
+
+.cards {
+  font-size: 3rem;
+  color: rgb(235, 246, 255);
+  margin: 3rem 0 0 0;
+  text-align: center;
+}
+.winner {
+  border: 0.3rem white dotted;
+}
+
+.win-game {
+  color: yellow;
+  font-size: 5rem;
+  position: absolute;
+  left: 30rem;
+  text-decoration: underline;
+}
+.scoreBox1 {
+  @include relativePosition(-3rem, 0rem);
+}
+.scoreBox2 {
+  @include relativePosition(-3rem, 0);
+}
