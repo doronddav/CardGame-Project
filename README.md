@@ -3,7 +3,7 @@ War card game for 2 players
 
 
 
-##Description
+## Description
 The main goal of the game is to get all card from the second player.
 the deck made by a fucntion
 ```function addCardsToDeck() {
