@@ -154,6 +154,17 @@ const winner = function () {
   }
 };
 
+function newGameFun() {
+  clearTable();
+  deckP1 = [];
+  deckP2 = [];
+  deck = [];
+  noCardOnTableP1 = true;
+  noCardOnTableP2 = true;
+  addCardsToDeck();
+  scoreP1.textContent = `${deckP1.length}`;
+  scoreP2.textContent = `${deckP2.length}`;
+}
 addCardsToDeck();
 btnPlayer1.addEventListener("click", () => {
   console.log("abv");
@@ -178,4 +189,25 @@ newGame.addEventListener("click", () => {
   scoreP1.textContent = `${deckP1.length}`;
   scoreP2.textContent = `${deckP2.length}`;
 });
-//
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    newGame.click();
+  }
+});
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "ArrowRight") {
+    btnPlayer2.click();
+  }
+});
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "ArrowLeft") {
+    btnPlayer1.click();
+  }
+});
+
+document.addEventListener("keydown", function (e) {
+  console.log(e);
+});
