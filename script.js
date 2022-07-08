@@ -178,7 +178,8 @@ btnPlayer2.addEventListener("click", () => {
   if (noCardOnTableP1 == false && noCardOnTableP2 == false) battle();
 });
 
-newGame.addEventListener("click", () => {
+newGame.addEventListener("click", (e) => {
+  e.preventDefault();
   clearTable();
   deckP1 = [];
   deckP2 = [];
@@ -197,17 +198,13 @@ document.addEventListener("keydown", function (e) {
 });
 
 document.addEventListener("keydown", function (e) {
-  if (e.key === "ArrowRight") {
-    btnPlayer2.click();
-  }
-});
-
-document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowLeft") {
     btnPlayer1.click();
   }
 });
 
 document.addEventListener("keydown", function (e) {
-  console.log(e);
+  if (e.key === "ArrowRight") {
+    btnPlayer2.click();
+  }
 });
